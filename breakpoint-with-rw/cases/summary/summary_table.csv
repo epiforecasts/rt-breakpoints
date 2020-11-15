@@ -1,0 +1,4 @@
+Region,New confirmed cases by infection date,Expected change in daily cases,Effective reproduction no.,Rate of growth,Doubling/halving time (days)
+Northern Ireland,320 (273 -- 377),Unsure,0.8 (0.8 -- 0.9),-0.04 (-0.05 -- -0.04),-15.5 (-19 -- -13.1)
+South West,1652 (1323 -- 2039),Increasing,1.1 (1 -- 1.1),0.02 (0 -- 0.03),44.2 (22.8 -- -3083.6)
+Wales,636 (501 -- 832),Unsure,0.9 (0.8 -- 0.9),-0.04 (-0.06 -- -0.02),-16.6 (-29.2 -- -11.9)
