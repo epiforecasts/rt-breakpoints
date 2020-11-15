@@ -11,9 +11,9 @@ To run this outside of Epiforecasts, these scripts need the following edits:
 
   1.	`run-rt-breakpoint.R` is the main script for running Rt estimates. To run this you will need to:
 
-    a.	Install `EpiNow2` development version from github (line 3)
+   a.	Install `EpiNow2` development version from github (line 3)
 
-    b.	Edit the file path to your own data (line 46)
+   b.	Edit the file path to your own data (line 46)
 
    c. Clean and format the data before running estimates (lines 46-56). This should result in a long format dataframe with columns `date`, `region`, `cases`, `admissions`, `deaths`.
 
