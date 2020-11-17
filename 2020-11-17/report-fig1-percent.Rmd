@@ -20,7 +20,7 @@ We aimed to explore intensive lockdowns (firebreaks) in Northern Ireland (from 1
 
 We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) from Monday 28th September using two different methods adjusting for the delay between infection and report.
 
-First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention, and a breakpoint at the end of the intervention if applicable (figure 2B). Second, we modelled R~t~ using a weekly random walk  with an additional breakpoints at the start of respective lockdowns and at the end if applicable. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak until the end of the firebreak (9 November in Wales). In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
+First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention, and a breakpoint at the end of the intervention if applicable (figure 2B). Second, we modelled R~t~ using a weekly random walk  with additional breakpoints at the start of respective lockdowns and at the end if applicable. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak until the end of the firebreak (9 November in Wales). In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
 
 We measured effect size as a multiplicative change in R~t~.
 
