@@ -18,7 +18,7 @@ We aimed to explore intensive lockdowns (firebreaks) in Northern Ireland (from 1
 
 ## Methods
 
-We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) from Monday 28th September using two different methods.
+We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) from Monday 28th September using two different methods adjusting for the delay between infection and report.
 
 First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention, and a breakpoint at the end of the intervention if applicable (figure 2B). Second, we modelled R~t~ using a weekly random walk  with an additional breakpoints at the start of respective lockdowns and at the end if applicable. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak until the end of the firebreak (9 November in Wales). In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
 
@@ -40,9 +40,9 @@ effects_group <- effects %>%
 
 In Northern Ireland and Wales there was clear evidence of a reduction in R~t~ linked with the firebreaks across all data streams and methods. 
 
-In Northern Ireland, we observed comparable effect sizes for the change in R~t~ estimated from admissions and deaths (between 10% to 35%, bringing R~t~ to below 1), while evidence of an effect was slightly weaker in R~t~ from cases. In Wales, evidence for an effect was strongest among R~t~ estimated from cases (with 50% credible intervals ranging from 22-29%). The R~t~ estimates from admissions and deaths were again similar (4-33%). In both countries, R~t~ estimates from deaths provided the weakest support for an effect of the firebreak at the outer limits of credible intervals (all 90% credible intervals for deaths fell just below 1).
+In Northern Ireland, we observed comparable effect sizes for the change in R~t~ estimated from admissions and deaths (between 10% to 35%, bringing R~t~ to below 1), while the estimated effect was lower on the R~t~ from cases but had tighter credible intervals. In Wales, evidence for an effect was strongest among R~t~ estimated from cases (with 50% credible intervals ranging from 22-29%). The R~t~ estimates from admissions and deaths were again similar (4-33%). In both countries, R~t~ estimates from deaths provided the weakest support for an effect of the firebreak at the outer limits of credible intervals (all 90% credible intervals for deaths fell just below 1) but the central estimates of the effect sizes matched those from other data sources.
 
-In general, we observed comparable results from either using breakpoints only on known intervention dates, or from allowing weekly change prior to known intervention dates. The more flexible approach appears to have produced slightly reduced effect sizes with reduced credible intervals.
+In general, we observed comparable results from either using breakpoints only on known intervention dates, or from allowing weekly change prior to known intervention dates. The more flexible approach produced slightly reduced effect sizes with increased credible intervals.
 
 ```{r echo=FALSE, fig.align='center', fig.height=2, fig.width=7, message=FALSE, warning=FALSE}
  library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
