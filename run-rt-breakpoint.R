@@ -8,6 +8,7 @@ library(data.table)
 library(future)
 # install.packages("EpiNow2")
 
+
 # Delays -----------------------------------------------------------
 # Update
 # source(here::here("delays", "public-linelist-delays.R"))
@@ -58,22 +59,37 @@ colnames(data) <- c("date", "region", "deaths", "admissions", "cases")
 
 data <- as.data.table(data)
 
-# Set date sequence to start from 6wks
+# Set date sequence to start from some weeks before the firebreak
 data$date <- lubridate::ymd(data$date)
-data <- data[, .SD[date >= (max(date)-42)], by = region]
+data <- data[, .SD[date >= "2020-09-28"], by = region]
 
 # Keep regions
-data <- data[region %in% c("South West", "Wales", "Northern Ireland")]
-
-# Add breakpoints
-data <- data[, breakpoint := data.table::fifelse( (date == as.Date("2020-10-16") & 
-                                                     region == "Northern Ireland") | 
-                                                    (date == as.Date("2020-10-24") & 
-                                                       region %in% c("Wales", "South West")), 
-                                                  1, 0)]
+data <- data[region %in% c("Wales", "Northern Ireland")]
 
 
-# # # Set up cores -----------------------------------------------------
+# Set breakpoints ---------------------------------------------------------
+all_dates <- unique(data$date)
+breakpoints <- list("firebreak" = list("n_ireland" = list("start" = as.Date("2020-10-16"),
+                                                          "end" = as.Date("2020-11-20")),
+                                       "wales" = list("start" = as.Date("2020-10-24"),
+                                                      "end" = as.Date("2020-11-09"))))
+
+# # Add multiple breakpoints, weekly on Sundays, for random walk
+sundays <- all_dates[weekdays(all_dates)=="Sunday"]
+
+breakpoints$random_walk_firebreak <- list("n_ireland" = c(sundays[sundays <= (breakpoints$firebreak$n_ireland$start - 6)], 
+                                                          breakpoints$firebreak$n_ireland$start,
+                                                          breakpoints$firebreak$n_ireland$end),
+                                          "wales" = c(sundays[sundays <= (breakpoints$firebreak$wales$start - 6)], 
+                                                      breakpoints$firebreak$wales$start,
+                                                      breakpoints$firebreak$wales$end))
+
+# Rt estimate -------------------------------------------------------------
+
+# Get function for Rts
+source(here::here("rt-breakpoint-epinow2-1.3.R"))
+
+# Set up cores -----------------------------------------------------
 setup_future <- function(jobs) {
   if (!interactive()) {
     ## If running as a script enable this
@@ -86,17 +102,23 @@ setup_future <- function(jobs) {
 }
 no_cores <- setup_future(length(unique(data$region)))
 
-# Rt estimate -------------------------------------------------------------
-
-# Get function for Rts
-source(here::here("rt-breakpoint-epinow2-1.3.R"))
 
 
-# breakpoint only ---------------------------------------------------------
+# Run Rt with single breakpoint  ---------------------------------------------------------
+# Add breakpoints
+# set data with single bp
+data_firebreak <- data[, breakpoint := data.table::fifelse( # NI
+  ((region == "Northern Ireland" &
+     date %in% breakpoints$firebreak$n_ireland) | 
+    # Wales
+    (region == "Wales" & 
+       date %in% breakpoints$firebreak$wales)),
+  1, 0)]
+
 # # Set root for saving estimates
 save_loc <- "breakpoint-only/"
 # # Cases
-cases <- run_rt_breakpoint(data = data,
+cases <- run_rt_breakpoint(data = data_firebreak,
                            type = "breakpoint",
                            truncate = 0,
                            count_variable = "cases",
@@ -106,7 +128,7 @@ cases <- run_rt_breakpoint(data = data,
                            save_loc = save_loc,
                            no_cores = no_cores)
 # Admissions
-adm <- run_rt_breakpoint(data = data,
+adm <- run_rt_breakpoint(data = data_firebreak,
                          type = "breakpoint",
                          truncate = 0,
                          count_variable = "admissions",
@@ -116,7 +138,7 @@ adm <- run_rt_breakpoint(data = data,
                          save_loc = save_loc,
                          no_cores = no_cores)
 # Deaths
-deaths <- run_rt_breakpoint(data = data,
+deaths <- run_rt_breakpoint(data = data_firebreak,
                             type = "breakpoint",
                             truncate = 0,
                             count_variable = "deaths",
@@ -127,30 +149,21 @@ deaths <- run_rt_breakpoint(data = data,
                             no_cores = no_cores)
 
 
+# Run Rt with RW ------------------------------------------------------------------
+# Add BPs
+data_rw_firebreak <- data[, breakpoint := data.table::fifelse( # NI
+  ((region == "Northern Ireland" &
+     date %in% breakpoints$random_walk_firebreak$n_ireland) | 
+    # Wales
+    (region == "Wales" & 
+       date %in% breakpoints$random_walk_firebreak$wales)),
+  1, 0)]
 
-# With RW -----------------------------------------------------------------
-
-# # Add multiple breakpoints, weekly on Sundays, for random walk
-sundays <- data[weekdays(data$date)=="Sunday", "date"]
-
-break_ni <- as.Date("2020-10-16")
-break_ni <- c(sundays[date <= (break_ni - 6)]$date, break_ni)
-
-break_wales <- as.Date("2020-10-24")
-break_wales <- c(sundays[date <= (break_wales - 6)]$date, break_wales)
-
-data_breaks <- data[, breakpoint := data.table::fifelse((date %in% break_ni &
-                                                           region == "Northern Ireland") |
-                                                          (date %in% break_wales &
-                                                             region %in%
-                                                             c("Wales", "South West")),
-                                                        1, 0)]
-
-#Run Rt
+# Save dir
 save_loc <- "breakpoint-with-rw/"
 
 # Cases
-cases <- run_rt_breakpoint(data = data_breaks,
+cases <- run_rt_breakpoint(data = data_rw_firebreak,
                            type = "breakpoint",
                            truncate = 0,
                            count_variable = "cases",
@@ -160,7 +173,7 @@ cases <- run_rt_breakpoint(data = data_breaks,
                            save_loc = save_loc,
                            no_cores = no_cores)
 # Admissions
-adm <- run_rt_breakpoint(data = data_breaks,
+adm <- run_rt_breakpoint(data = data_rw_firebreak,
                          type = "breakpoint",
                          truncate = 0,
                          count_variable = "admissions",
@@ -170,7 +183,7 @@ adm <- run_rt_breakpoint(data = data_breaks,
                          save_loc = save_loc,
                          no_cores = no_cores)
 # Deaths
-deaths <- run_rt_breakpoint(data = data_breaks,
+deaths <- run_rt_breakpoint(data = data_rw_firebreak,
                             type = "breakpoint",
                             truncate = 0,
                             count_variable = "deaths",
