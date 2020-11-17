@@ -83,6 +83,7 @@ breakpoints$random_walk_firebreak <- list("n_ireland" = c(sundays[sundays <= (br
                                           "wales" = c(sundays[sundays <= (breakpoints$firebreak$wales$start - 6)], 
                                                       breakpoints$firebreak$wales$start,
                                                       breakpoints$firebreak$wales$end))
+saveRDS(breakpoints, paste0(Sys.Date(), "/breakpoints.rds"))
 
 # Rt estimate -------------------------------------------------------------
 

@@ -38,13 +38,13 @@ effects_group <- effects %>%
             min_u50 = round(min(upper_50)*100,1))
 ```
 
-In Northern Ireland there was clear evidence of a reduction in R~t~ linked with the firebreak across all data streams and methods. Among R~t~ estimated from admissions and deaths, this had a comparable effect size (between 10% to 35%, bringing R~t~ to below 1), while evidence of an effect was slightly weaker in R~t~ from cases. 
+In Northern Ireland and Wales there was clear evidence of a reduction in R~t~ linked with the firebreaks across all data streams and methods. 
 
-In Wales there was less evidence for an effect. There was some support for an effect in R~t~ estimated from cases (-4% to 14%, with mean of central estimates 5%), with weaker support in admissions (-9% to 8%, with mean of central estimates 1.2%). In all estimates the lower 50% credible interval of the effect size fell under 0, and there was no evidence of an effect on deaths.
+In Northern Ireland, we observed comparable effect sizes for the change in R~t~ estimated from admissions and deaths (between 10% to 35%, bringing R~t~ to below 1), while evidence of an effect was slightly weaker in R~t~ from cases. In Wales, evidence for an effect was strongest among R~t~ estimated from cases (with 50% credible intervals ranging from 22-29%). The R~t~ estimates from admissions and deaths were again similar (4-33%). In both countries, R~t~ estimates from deaths provided the weakest support for an effect of the firebreak at the outer limits of credible intervals (all 90% credible intervals for deaths fell just below 1).
 
 In general, we observed comparable results from either using breakpoints only on known intervention dates, or from allowing weekly change prior to known intervention dates. The more flexible approach appears to have produced slightly reduced effect sizes with reduced credible intervals.
 
-```{r, fig.height = 2, fig.width = 7, fig.align='center', message=F, warning=F, echo=FALSE}
+```{r echo=FALSE, fig.align='center', fig.height=2, fig.width=7, message=FALSE, warning=FALSE}
  library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
 
 effects %>%
