@@ -1,130 +1,101 @@
 region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
-South West,2020-10-04,,estimate,13,14,5,7,10,12,14,17,23
-South West,2020-10-05,,estimate,16,16,6,8,12,14,17,20,26
-South West,2020-10-07,,estimate,16,17,6,8,13,15,17,20,26
-Northern Ireland,2020-11-14,,estimate based on partial data,16,20,15,3,10,13,19,26,46
-South West,2020-10-06,,estimate,17,17,6,9,13,15,18,21,27
-South West,2020-10-10,,estimate,17,18,6,9,14,16,19,21,28
-Northern Ireland,2020-11-15,,estimate based on partial data,17,21,16,4,10,14,20,27,50
-Northern Ireland,2020-11-07,,estimate based on partial data,19,22,16,4,12,16,22,29,52
-South West,2020-10-09,,estimate,20,20,7,11,16,18,22,25,32
-Northern Ireland,2020-11-08,,estimate based on partial data,20,24,17,5,12,17,24,31,56
-Northern Ireland,2020-10-05,,estimate,20,24,17,5,13,17,24,32,56
-South West,2020-10-11,,estimate,21,21,6,11,16,19,22,25,32
-South West,2020-10-08,,estimate,21,21,7,12,17,19,22,26,33
-Northern Ireland,2020-11-16,,estimate based on partial data,21,24,17,5,12,17,24,32,59
-Northern Ireland,2020-10-10,,estimate,21,25,18,5,13,18,25,33,59
-Northern Ireland,2020-10-31,,estimate,22,26,18,5,13,18,26,33,60
-Northern Ireland,2020-11-01,,estimate,23,27,18,6,15,20,27,35,63
-Northern Ireland,2020-11-12,,estimate based on partial data,23,27,20,6,14,19,27,36,65
-South West,2020-10-12,,estimate,24,25,7,14,20,23,26,30,38
-Northern Ireland,2020-10-11,,estimate,24,28,21,6,14,20,28,37,65
-Northern Ireland,2020-11-09,,estimate based on partial data,24,29,20,6,15,20,29,37,65
-Northern Ireland,2020-11-13,,estimate based on partial data,24,29,20,6,15,20,29,37,68
-Northern Ireland,2020-11-11,,estimate based on partial data,24,29,21,6,15,21,29,38,69
-South West,2020-10-14,,estimate,25,25,8,14,20,23,27,30,39
-Northern Ireland,2020-10-24,,estimate,25,29,21,6,15,21,30,38,68
-South West,2020-10-17,,estimate,26,27,8,15,21,24,28,32,40
-South West,2020-10-13,,estimate,26,27,8,15,21,24,28,32,41
-Northern Ireland,2020-10-17,,estimate,26,30,20,6,16,22,30,39,69
-Northern Ireland,2020-10-07,,estimate,26,31,22,7,16,22,31,40,73
-Northern Ireland,2020-10-25,,estimate,27,31,21,7,16,23,31,41,72
-Northern Ireland,2020-11-05,,estimate,27,31,22,6,17,22,32,41,71
-Northern Ireland,2020-10-08,,estimate,27,32,23,6,16,23,31,42,73
-Northern Ireland,2020-10-06,,estimate,27,32,23,7,17,23,32,42,74
-Northern Ireland,2020-11-10,,estimate based on partial data,28,33,23,7,17,23,33,43,75
-Northern Ireland,2020-11-02,,estimate,28,33,23,7,17,24,33,43,75
-Northern Ireland,2020-10-18,,estimate,28,33,23,7,18,24,33,42,73
-Northern Ireland,2020-11-06,,estimate based on partial data,29,34,23,7,18,24,34,45,76
-Northern Ireland,2020-11-04,,estimate,29,34,23,7,18,25,35,44,77
-South West,2020-10-16,,estimate,30,31,9,18,25,28,33,36,47
-Northern Ireland,2020-10-12,,estimate,30,35,24,7,18,25,35,46,78
-Northern Ireland,2020-10-09,,estimate,30,37,27,8,19,25,36,48,85
-South West,2020-10-18,,estimate,31,32,9,19,26,29,33,37,48
-South West,2020-10-15,,estimate,32,33,9,19,26,30,34,38,49
-Northern Ireland,2020-10-29,,estimate,32,37,25,8,20,26,37,49,85
-Northern Ireland,2020-10-26,,estimate,32,37,25,8,20,27,38,48,82
-Northern Ireland,2020-11-03,,estimate,32,38,25,8,20,27,38,49,86
-Northern Ireland,2020-10-15,,estimate,33,39,26,8,20,28,39,50,89
-Northern Ireland,2020-10-30,,estimate,33,39,27,9,21,28,39,51,89
-Northern Ireland,2020-10-28,,estimate,34,39,26,9,21,28,39,51,87
-Northern Ireland,2020-10-19,,estimate,34,41,27,9,22,29,41,53,92
-Northern Ireland,2020-10-22,,estimate,35,41,28,8,21,29,41,53,93
-Northern Ireland,2020-10-14,,estimate,35,41,28,9,21,29,41,53,92
-South West,2020-10-21,,estimate,37,38,10,22,31,35,40,44,56
-South West,2020-10-19,,estimate,37,38,10,23,30,35,39,44,56
-Northern Ireland,2020-10-16,,estimate,37,43,29,9,23,31,44,57,97
-Northern Ireland,2020-10-13,,estimate,37,43,30,9,23,31,43,56,97
-Wales,2020-10-05,,estimate,38,39,9,25,32,36,40,44,55
-Northern Ireland,2020-10-27,,estimate,38,44,29,10,23,32,45,57,98
-Northern Ireland,2020-10-23,,estimate,38,44,29,10,23,32,45,58,99
-Northern Ireland,2020-10-21,,estimate,38,44,31,9,23,32,44,57,100
-South West,2020-10-20,,estimate,39,40,11,24,33,37,42,47,59
-South West,2020-10-24,,estimate,39,40,11,24,33,37,42,47,59
-Wales,2020-10-10,,estimate,41,42,10,27,35,39,44,48,60
-Northern Ireland,2020-10-20,,estimate,41,49,32,10,26,35,49,64,110
-Wales,2020-10-11,,estimate,42,43,10,28,36,40,45,49,61
-South West,2020-10-23,,estimate,45,46,13,28,38,42,49,54,68
-Wales,2020-10-08,,estimate,46,46,11,30,39,43,49,54,65
-Wales,2020-10-09,,estimate,47,47,11,31,40,44,49,54,67
-Wales,2020-10-06,,estimate,47,48,11,31,40,44,50,54,67
-Wales,2020-10-07,,estimate,47,48,11,31,40,44,50,54,67
-South West,2020-10-25,,estimate,47,48,13,29,39,44,50,56,70
-South West,2020-10-22,,estimate,48,49,13,30,40,45,51,57,71
-Wales,2020-10-12,,estimate,51,52,12,34,44,48,54,59,73
-Wales,2020-10-17,,estimate,54,55,12,37,47,51,57,62,76
-Wales,2020-10-18,,estimate,55,56,13,37,48,52,58,64,78
-South West,2020-10-28,,estimate,55,56,15,34,46,52,58,65,82
-South West,2020-10-26,,estimate,56,57,15,35,46,52,59,65,82
-South West,2020-10-31,,estimate,56,57,15,35,47,53,60,66,84
-South West,2020-10-27,,estimate,58,60,15,37,49,55,62,69,86
-Wales,2020-10-15,,estimate,60,61,13,40,52,57,63,69,84
-Wales,2020-10-16,,estimate,61,62,13,42,53,58,64,70,85
-Wales,2020-11-15,,estimate based on partial data,62,63,14,42,53,59,66,72,88
-Wales,2020-10-14,,estimate,63,63,13,43,54,59,66,72,87
-Wales,2020-10-13,,estimate,63,64,14,43,55,60,67,72,88
-Wales,2020-11-14,,estimate based on partial data,65,66,15,44,56,61,68,75,91
-South West,2020-10-30,,estimate,66,67,17,42,55,61,69,77,96
-South West,2020-11-01,,estimate,66,67,17,42,56,62,70,78,96
-Wales,2020-10-19,,estimate,67,68,14,46,58,63,70,76,93
-Wales,2020-11-08,,estimate based on partial data,69,70,15,47,59,65,72,79,96
-Wales,2020-10-24,,estimate,70,70,15,48,60,65,73,80,97
-South West,2020-10-29,,estimate,70,72,18,45,59,66,75,82,104
-Wales,2020-11-07,,estimate based on partial data,71,71,15,48,61,67,74,81,97
-Wales,2020-10-25,,estimate,71,72,15,49,62,67,75,81,98
-Wales,2020-11-16,,estimate based on partial data,72,73,16,49,62,68,76,83,100
-Wales,2020-11-01,,estimate,73,74,16,51,64,70,77,84,101
-South West,2020-11-04,,estimate,75,77,19,49,64,71,80,88,110
-Wales,2020-10-31,,estimate,76,77,16,53,66,72,80,87,104
-South West,2020-11-07,,estimate based on partial data,76,77,19,49,64,71,81,89,111
-Wales,2020-11-13,,estimate based on partial data,76,78,16,53,66,73,80,87,106
-South West,2020-11-02,,estimate,76,78,19,50,65,72,81,90,112
-Wales,2020-10-22,,estimate,78,79,16,54,68,74,82,89,106
-Wales,2020-10-23,,estimate,78,79,16,54,68,74,82,89,108
-Wales,2020-11-09,,estimate based on partial data,79,80,16,55,69,75,82,90,109
-Wales,2020-11-12,,estimate based on partial data,79,80,17,55,69,75,84,91,110
-Wales,2020-10-21,,estimate,80,81,16,57,70,76,84,91,109
-South West,2020-11-03,,estimate,80,82,21,52,68,76,86,94,119
-Wales,2020-10-20,,estimate,81,83,17,57,71,78,85,93,112
-Wales,2020-11-06,,estimate based on partial data,83,85,17,59,73,80,88,95,114
-Wales,2020-11-02,,estimate,85,86,17,59,75,81,90,97,116
-Wales,2020-10-26,,estimate,85,86,18,59,74,80,89,97,118
-Wales,2020-11-11,,estimate based on partial data,86,87,18,60,75,82,90,98,120
-Wales,2020-11-05,,estimate,86,87,18,61,75,82,90,98,118
-Wales,2020-10-30,,estimate,89,90,18,62,78,84,93,101,122
-South West,2020-11-06,,estimate based on partial data,90,91,22,58,76,84,95,104,130
-South West,2020-11-08,,estimate based on partial data,90,92,22,58,76,85,96,105,131
-Wales,2020-10-29,,estimate,91,92,19,63,79,87,96,104,125
-Wales,2020-11-10,,estimate based on partial data,92,93,19,64,80,88,97,105,127
-Wales,2020-11-04,,estimate,93,94,19,66,81,89,98,106,127
-South West,2020-11-05,,estimate based on partial data,97,98,24,63,82,91,103,113,138
-Wales,2020-10-28,,estimate,98,99,20,68,85,93,103,111,133
-Wales,2020-11-03,,estimate,99,101,20,70,87,94,104,113,135
-Wales,2020-10-27,,estimate,102,103,21,71,89,98,107,116,139
-South West,2020-11-11,,estimate based on partial data,103,105,26,66,87,97,109,120,152
-South West,2020-11-14,,estimate based on partial data,104,106,26,67,88,98,110,121,153
-South West,2020-11-09,,estimate based on partial data,105,107,26,68,89,99,111,123,153
-South West,2020-11-10,,estimate based on partial data,110,113,27,73,94,104,117,129,162
-South West,2020-11-13,,estimate based on partial data,121,124,31,80,103,114,129,143,180
-South West,2020-11-15,,estimate based on partial data,123,125,31,81,104,116,130,143,179
-South West,2020-11-12,,estimate based on partial data,131,134,33,87,112,124,139,153,192
+Northern Ireland,2020-09-28,,estimate,12,14,9,3,7,10,14,18,31
+Northern Ireland,2020-10-03,,estimate,13,15,10,3,8,11,15,19,34
+Northern Ireland,2020-10-04,,estimate,14,16,10,4,9,12,16,21,35
+Northern Ireland,2020-09-30,,estimate,14,16,11,3,8,12,16,20,36
+Northern Ireland,2020-09-29,,estimate,14,16,11,3,9,12,16,21,35
+Northern Ireland,2020-10-01,,estimate,15,17,13,4,9,12,17,22,37
+Northern Ireland,2020-10-02,,estimate,16,19,13,4,10,14,19,24,43
+Northern Ireland,2020-11-15,,estimate based on partial data,17,20,13,4,10,14,20,25,45
+Northern Ireland,2020-11-14,,estimate based on partial data,17,20,14,5,11,14,20,27,45
+Northern Ireland,2020-10-05,,estimate,19,21,14,5,12,16,22,27,46
+Northern Ireland,2020-10-10,,estimate,19,22,14,5,12,17,23,29,48
+Northern Ireland,2020-10-11,,estimate,20,23,15,5,13,17,24,30,53
+Northern Ireland,2020-11-08,,estimate based on partial data,20,23,15,6,13,17,24,30,52
+Northern Ireland,2020-11-07,,estimate based on partial data,21,23,16,6,13,18,24,30,50
+Northern Ireland,2020-10-07,,estimate,21,24,15,6,13,18,24,31,51
+Northern Ireland,2020-11-16,,estimate based on partial data,21,25,17,6,13,18,25,32,57
+Northern Ireland,2020-10-06,,estimate,22,25,16,6,14,19,25,32,53
+Northern Ireland,2020-10-08,,estimate,22,26,17,6,14,19,26,34,56
+Northern Ireland,2020-11-12,,estimate based on partial data,23,26,18,6,14,19,27,34,58
+Northern Ireland,2020-11-13,,estimate based on partial data,23,27,18,6,14,19,27,34,60
+Wales,2020-09-28,,estimate,24,25,7,15,20,23,26,29,37
+Northern Ireland,2020-10-09,,estimate,24,27,17,7,16,21,28,36,58
+Northern Ireland,2020-11-11,,estimate based on partial data,24,28,18,7,15,20,28,36,62
+Northern Ireland,2020-10-31,,estimate,24,28,18,7,16,21,28,36,59
+Northern Ireland,2020-11-01,,estimate,24,28,18,7,16,21,28,36,59
+Northern Ireland,2020-11-09,,estimate based on partial data,25,29,18,8,17,21,29,37,63
+Northern Ireland,2020-11-10,,estimate based on partial data,27,31,20,8,18,23,32,40,68
+Northern Ireland,2020-11-06,,estimate based on partial data,27,32,19,8,18,24,32,41,67
+Wales,2020-10-03,,estimate,28,29,7,17,23,26,30,33,41
+Northern Ireland,2020-10-12,,estimate,28,31,19,8,18,24,32,40,67
+Northern Ireland,2020-11-05,,estimate,28,32,20,8,18,23,32,40,69
+Northern Ireland,2020-10-17,,estimate,28,32,20,8,18,24,33,42,69
+Northern Ireland,2020-10-25,,estimate,28,32,20,8,18,24,33,42,70
+Wales,2020-10-04,,estimate,29,30,7,18,25,28,31,35,42
+Northern Ireland,2020-11-04,,estimate,29,32,20,9,19,25,33,42,70
+Northern Ireland,2020-10-24,,estimate,29,33,20,8,18,25,34,42,70
+Northern Ireland,2020-10-18,,estimate,30,34,21,9,19,25,34,43,72
+Wales,2020-10-01,,estimate,31,31,8,19,26,29,32,36,44
+Wales,2020-09-30,,estimate,31,31,8,20,26,29,33,36,45
+Wales,2020-09-29,,estimate,31,32,8,20,26,29,33,36,45
+Wales,2020-10-02,,estimate,31,32,8,20,26,29,33,36,45
+Northern Ireland,2020-10-14,,estimate,31,35,21,9,20,26,36,45,73
+Northern Ireland,2020-11-02,,estimate,31,35,21,9,20,27,36,45,73
+Northern Ireland,2020-10-13,,estimate,32,36,22,10,21,27,36,47,77
+Northern Ireland,2020-11-03,,estimate,33,37,22,10,21,28,38,48,77
+Northern Ireland,2020-10-15,,estimate,33,37,23,9,21,28,39,48,80
+Northern Ireland,2020-10-30,,estimate,33,38,23,10,22,29,38,48,82
+Northern Ireland,2020-10-29,,estimate,34,37,23,9,22,29,38,48,79
+Northern Ireland,2020-10-28,,estimate,34,38,24,10,22,29,39,50,81
+Wales,2020-10-05,,estimate,36,37,9,23,31,34,38,42,52
+Northern Ireland,2020-10-16,,estimate,36,40,25,10,23,31,41,51,86
+Northern Ireland,2020-10-26,,estimate,36,41,24,11,24,31,42,52,85
+Northern Ireland,2020-10-22,,estimate,38,43,27,11,25,33,44,56,92
+Northern Ireland,2020-10-21,,estimate,38,44,27,11,24,33,44,56,95
+Wales,2020-10-10,,estimate,39,39,9,25,33,36,41,45,55
+Northern Ireland,2020-10-27,,estimate,39,43,26,11,25,33,45,56,92
+Northern Ireland,2020-10-19,,estimate,39,44,27,12,25,33,46,58,93
+Wales,2020-10-11,,estimate,40,41,9,27,34,38,42,47,57
+Northern Ireland,2020-10-23,,estimate,40,44,26,12,26,35,46,57,91
+Northern Ireland,2020-10-20,,estimate,42,48,30,11,27,36,49,62,103
+Wales,2020-10-08,,estimate,43,43,10,29,37,41,45,49,60
+Wales,2020-10-09,,estimate,43,44,10,29,37,41,45,50,61
+Wales,2020-10-07,,estimate,44,44,10,29,38,41,46,51,61
+Wales,2020-10-06,,estimate,45,45,10,30,38,42,47,52,63
+Wales,2020-10-12,,estimate,50,50,11,34,43,47,52,57,69
+Wales,2020-10-17,,estimate,52,53,11,35,45,49,55,60,72
+Wales,2020-10-18,,estimate,55,55,12,37,47,52,58,63,75
+Wales,2020-10-15,,estimate,58,59,12,40,50,55,61,67,79
+Wales,2020-10-16,,estimate,58,59,12,40,50,55,62,67,80
+Wales,2020-10-14,,estimate,59,60,13,41,51,56,62,68,81
+Wales,2020-10-13,,estimate,60,61,13,42,53,57,63,69,83
+Wales,2020-11-15,,estimate based on partial data,62,63,14,42,53,59,65,71,86
+Wales,2020-11-14,,estimate based on partial data,63,64,14,43,55,60,66,72,87
+Wales,2020-10-19,,estimate,66,67,14,46,58,63,70,76,91
+Wales,2020-11-08,,estimate based on partial data,69,70,14,48,60,66,73,79,95
+Wales,2020-10-24,,estimate,70,71,14,49,61,67,74,80,95
+Wales,2020-11-07,,estimate based on partial data,70,71,14,50,61,67,74,80,96
+Wales,2020-11-16,,estimate based on partial data,71,72,16,48,62,68,75,82,100
+Wales,2020-10-25,,estimate,73,74,15,51,63,69,76,83,101
+Wales,2020-11-13,,estimate based on partial data,74,75,15,52,65,71,78,85,102
+Wales,2020-11-01,,estimate,76,77,16,54,66,73,80,87,103
+Wales,2020-10-31,,estimate,77,78,16,54,67,73,81,87,104
+Wales,2020-10-22,,estimate,78,79,16,54,68,74,82,88,106
+Wales,2020-10-23,,estimate,78,79,16,54,68,74,82,89,105
+Wales,2020-11-12,,estimate based on partial data,79,80,16,55,69,75,83,90,108
+Wales,2020-10-21,,estimate,79,80,16,57,69,76,83,90,108
+Wales,2020-11-09,,estimate based on partial data,79,81,16,56,69,76,84,91,108
+Wales,2020-10-20,,estimate,82,83,16,57,72,78,86,93,110
+Wales,2020-11-06,,estimate based on partial data,83,84,16,59,73,79,87,94,113
+Wales,2020-11-11,,estimate based on partial data,85,86,17,61,74,81,89,97,115
+Wales,2020-10-26,,estimate,87,88,17,61,77,83,92,99,119
+Wales,2020-11-05,,estimate,87,89,17,63,77,83,92,99,119
+Wales,2020-11-02,,estimate,88,88,17,62,76,83,92,99,119
+Wales,2020-10-30,,estimate,90,91,17,64,79,85,94,101,121
+Wales,2020-11-10,,estimate based on partial data,93,94,18,65,81,88,97,105,125
+Wales,2020-10-29,,estimate,94,95,19,67,83,90,99,107,128
+Wales,2020-11-04,,estimate,94,96,18,68,83,90,99,107,128
+Wales,2020-10-28,,estimate,100,101,19,71,87,95,105,114,135
+Wales,2020-11-03,,estimate,102,103,20,73,90,97,107,115,136
+Wales,2020-10-27,,estimate,106,107,21,76,93,101,111,119,144

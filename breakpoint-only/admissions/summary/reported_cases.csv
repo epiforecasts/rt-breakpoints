@@ -1,129 +1,100 @@
 region,date,confirm,breakpoint
-South West,2020-10-04,8,0
-South West,2020-10-05,14,0
+Wales,2020-09-28,24,0
+Northern Ireland,2020-09-28,15,0
+Wales,2020-09-29,30,0
+Northern Ireland,2020-09-29,7,0
+Wales,2020-09-30,27,0
+Northern Ireland,2020-09-30,8,0
+Wales,2020-10-01,30,0
+Northern Ireland,2020-10-01,14,0
+Wales,2020-10-02,24,0
+Northern Ireland,2020-10-02,9,0
+Wales,2020-10-03,23,0
+Northern Ireland,2020-10-03,19,0
+Wales,2020-10-04,30,0
+Northern Ireland,2020-10-04,14,0
 Wales,2020-10-05,50,0
 Northern Ireland,2020-10-05,20,0
-South West,2020-10-06,16,0
 Wales,2020-10-06,34,0
 Northern Ireland,2020-10-06,23,0
-South West,2020-10-07,14,0
 Wales,2020-10-07,45,0
 Northern Ireland,2020-10-07,24,0
-South West,2020-10-08,19,0
 Wales,2020-10-08,49,0
 Northern Ireland,2020-10-08,23,0
-South West,2020-10-09,28,0
 Wales,2020-10-09,40,0
 Northern Ireland,2020-10-09,23,0
-South West,2020-10-10,17,0
 Wales,2020-10-10,48,0
 Northern Ireland,2020-10-10,23,0
-South West,2020-10-11,21,0
 Wales,2020-10-11,41,0
 Northern Ireland,2020-10-11,28,0
-South West,2020-10-12,21,0
 Wales,2020-10-12,47,0
 Northern Ireland,2020-10-12,33,0
-South West,2020-10-13,27,0
 Wales,2020-10-13,71,0
 Northern Ireland,2020-10-13,31,0
-South West,2020-10-14,28,0
 Wales,2020-10-14,72,0
 Northern Ireland,2020-10-14,26,0
-South West,2020-10-15,43,0
 Wales,2020-10-15,68,0
 Northern Ireland,2020-10-15,44,0
-South West,2020-10-16,28,0
 Wales,2020-10-16,50,0
 Northern Ireland,2020-10-16,40,1
-South West,2020-10-17,20,0
 Wales,2020-10-17,58,0
 Northern Ireland,2020-10-17,37,0
-South West,2020-10-18,35,0
 Wales,2020-10-18,45,0
 Northern Ireland,2020-10-18,36,0
-South West,2020-10-19,41,0
 Wales,2020-10-19,53,0
 Northern Ireland,2020-10-19,32,0
-South West,2020-10-20,36,0
 Wales,2020-10-20,76,0
 Northern Ireland,2020-10-20,39,0
-South West,2020-10-21,43,0
 Wales,2020-10-21,77,0
 Northern Ireland,2020-10-21,34,0
-South West,2020-10-22,37,0
 Wales,2020-10-22,87,0
 Northern Ireland,2020-10-22,46,0
-South West,2020-10-23,41,0
 Wales,2020-10-23,91,0
 Northern Ireland,2020-10-23,41,0
-South West,2020-10-24,23,1
 Wales,2020-10-24,78,1
 Northern Ireland,2020-10-24,41,0
-South West,2020-10-25,48,0
 Wales,2020-10-25,63,0
 Northern Ireland,2020-10-25,33,0
-South West,2020-10-26,68,0
 Wales,2020-10-26,98,0
 Northern Ireland,2020-10-26,44,0
-South West,2020-10-27,75,0
 Wales,2020-10-27,106,0
 Northern Ireland,2020-10-27,45,0
-South West,2020-10-28,63,0
 Wales,2020-10-28,106,0
 Northern Ireland,2020-10-28,33,0
-South West,2020-10-29,61,0
 Wales,2020-10-29,77,0
 Northern Ireland,2020-10-29,38,0
-South West,2020-10-30,57,0
 Wales,2020-10-30,101,0
 Northern Ireland,2020-10-30,41,0
-South West,2020-10-31,75,0
 Wales,2020-10-31,87,0
 Northern Ireland,2020-10-31,21,0
-South West,2020-11-01,89,0
 Wales,2020-11-01,79,0
 Northern Ireland,2020-11-01,29,0
-South West,2020-11-02,62,0
 Wales,2020-11-02,98,0
 Northern Ireland,2020-11-02,46,0
-South West,2020-11-03,84,0
 Wales,2020-11-03,102,0
 Northern Ireland,2020-11-03,45,0
-South West,2020-11-04,78,0
 Wales,2020-11-04,79,0
 Northern Ireland,2020-11-04,34,0
-South West,2020-11-05,89,0
 Wales,2020-11-05,83,0
 Northern Ireland,2020-11-05,21,0
-South West,2020-11-06,92,0
 Wales,2020-11-06,65,0
 Northern Ireland,2020-11-06,45,0
-South West,2020-11-07,91,0
 Wales,2020-11-07,70,0
 Northern Ireland,2020-11-07,24,0
-South West,2020-11-08,94,0
 Wales,2020-11-08,72,0
 Northern Ireland,2020-11-08,31,0
-South West,2020-11-09,114,0
-Wales,2020-11-09,68,0
+Wales,2020-11-09,68,1
 Northern Ireland,2020-11-09,41,0
-South West,2020-11-10,92,0
 Wales,2020-11-10,107,0
 Northern Ireland,2020-11-10,41,0
-South West,2020-11-11,77,0
 Wales,2020-11-11,90,0
 Northern Ireland,2020-11-11,46,0
-South West,2020-11-12,163,0
 Wales,2020-11-12,76,0
 Northern Ireland,2020-11-12,25,0
-South West,2020-11-13,127,0
 Wales,2020-11-13,96,0
 Northern Ireland,2020-11-13,23,0
-South West,2020-11-14,107,0
 Wales,2020-11-14,38,0
 Northern Ireland,2020-11-14,,0
-South West,2020-11-15,94,0
 Wales,2020-11-15,,0
 Northern Ireland,2020-11-15,,0
 Wales,2020-11-16,,0

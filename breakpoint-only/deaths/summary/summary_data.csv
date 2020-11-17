@@ -1,7 +1,5 @@
 region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases
-South West,16 (3 -- 42),16,18,13,3,9,13,18,24,42,New confirmed cases by infection date,Likely increasing
-Wales,13 (2 -- 49),13,17,16,2,6,10,16,24,49,New confirmed cases by infection date,Unsure
-Northern Ireland,7 (2 -- 25),7,10,8,2,4,6,9,12,25,New confirmed cases by infection date,Unsure
-South West,1.1 (0.8 -- 1.2),1.1,1,0.1,0.8,1,1,1.1,1.1,1.2,Effective reproduction no.,Likely increasing
-Northern Ireland,1 (0.8 -- 1.1),1,1,0.1,0.8,0.9,1,1,1.1,1.1,Effective reproduction no.,Unsure
-Wales,1 (0.7 -- 1.1),1,0.9,0.1,0.7,0.8,0.9,1,1,1.1,Effective reproduction no.,Unsure
+Wales,11 (1 -- 53),11,17,19,1,4,7,15,23,53,New confirmed cases by infection date,Unsure
+Northern Ireland,6 (1 -- 29),6,9,10,1,3,4,8,12,29,New confirmed cases by infection date,Unsure
+Northern Ireland,1 (0.8 -- 1.2),1,1,0.1,0.8,0.9,0.9,1,1.1,1.2,Effective reproduction no.,Unsure
+Wales,0.9 (0.5 -- 1.2),0.9,0.9,0.2,0.5,0.8,0.9,1,1.1,1.2,Effective reproduction no.,Unsure
