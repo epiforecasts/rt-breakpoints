@@ -13,7 +13,7 @@ colnames(data) <- c("date", "region", "deaths", "admissions", "cases")
 data <- as.data.table(data)
 data$date <- lubridate::ymd(data$date)
 data <- data[, .SD[date >= (max(date)-42)], by = region]
-data <- data[region %in% c("Wales", "Northern Ireland", "South West")]
+data <- data[region %in% c("Wales", "Northern Ireland")]
 data <- data[, breakpoint := data.table::fifelse( (date == as.Date("2020-10-16") & 
                                                      region == "Northern Ireland") | 
                                                     (date == as.Date("2020-10-24") & 

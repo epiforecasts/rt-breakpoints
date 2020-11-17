@@ -5,7 +5,7 @@ library("ggplot2")
 vars <- c("cases", "admissions", "deaths")
 models <- c("breakpoint-only",
             "breakpoint-with-rw") #,
-regions <- c("South West", "Wales", "Northern Ireland")
+regions <- c("Wales", "Northern Ireland")
 
 # Get summary
 regions_fn <- function(model, var, region){
@@ -38,7 +38,7 @@ effects <- summary %>%
   dplyr::filter(strat == max(strat)) %>%
   dplyr::select(-c(variable, type, date, strat, mean, sd, lower_20:upper_20)) %>%
   dplyr::mutate(region = factor(region,
-                                levels = c("South West", "Wales", "Northern Ireland"),
+                                levels = c("Wales", "Northern Ireland"),
                                 ordered = TRUE),
                 model = factor(model,
                                 levels = c("breakpoint-only", "breakpoint-with-rw"),
