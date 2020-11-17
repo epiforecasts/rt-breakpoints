@@ -14,26 +14,38 @@ knitr::opts_chunk$set(tidy = TRUE, tidy.opts = list(comment = FALSE))
 
 ## Rationale
 
-We aimed to explore ongoing intensive lockdowns (firebreaks) in Northern Ireland (from 16th October 2020) and Wales (24th October to 9th November 2020), by analysing the reproduction number (R~t~) before and after the intervention. In order to identify any effect from these interventions, we estimated R~t~ with set breakpoints on the dates the interventions came into place.
+We aimed to explore intensive lockdowns (firebreaks) in Northern Ireland (from 16th October 2020) and Wales (24th October to 9th November 2020), by analysing the reproduction number (R~t~) before, during, and after the intervention. In order to identify any effect from these interventions, we estimated R~t~ with set breakpoints on the dates the interventions came into place and when they were lifted.
 
 ## Methods
 
-We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) from Monday 28th September using two different methods.
+We estimated R~t~ separately from cases, hospitalisations and deaths (shown as a 7 day moving average in Fig 1A) from Monday 28th September using two different methods adjusting for the delay between infection and report.
 
-First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention (figure 2B). Second, we modelled R~t~ using a weekly random walk  with an additional breakpoint at the start of respective lockdowns. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak until the end of the firebreak (9 November in Wales). In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
+First we modelled R~t~ as piecewise constant with a single breakpoint at the start of respective intervention, and a breakpoint at the end of the intervention if applicable (figure 2B). Second, we modelled R~t~ using a weekly random walk  with additional breakpoints at the start of respective lockdowns and at the end if applicable. In the latter method, we left at least one week between the last random step and the firebreak breakpoint. No further breakpoints were included beyond the start of the firebreak until the end of the firebreak (9 November in Wales). In all estimates, we specified an R~t~ prior of mean 1.2 (SD 0.2). 
 
 We measured effect size as a multiplicative change in R~t~.
 
 ## Results
-
-We saw some evidence of an impact of the firebreak when R~t~ was modelled using breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ by ca. 10-30% when estimated from hospital admissions in Northern Ireland and Wales, bringing R~t~ below 1 in both cases. A similar effect was observed in Rt from reported cases in Wales.
-
-```{r, fig.height = 2, fig.width = 7, fig.align='center', message=F, warning=F, echo=FALSE}
- library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
-
+```{r, message=F, warning=F, echo=FALSE}
+ library(dplyr, quietly = TRUE)
 effects <- suppressMessages(readr::read_csv(here::here(Sys.Date(),
                             "breakpoint-effects.csv"))) %>%
   dplyr::mutate_if(is.numeric, ~ 1 - .) 
+
+effects_group <- effects %>%
+  group_by(region, source) %>%
+  summarise(mean_median = round(mean(median)*100,1),
+            max_l50 = round(max(lower_50)*100,1),
+            min_u50 = round(min(upper_50)*100,1))
+```
+
+In Northern Ireland and Wales there was clear evidence of a reduction in R~t~ linked with the firebreaks across all data streams and methods. 
+
+In Northern Ireland, we observed comparable effect sizes for the change in R~t~ estimated from admissions and deaths (between 10% to 35%, bringing R~t~ to below 1), while the estimated effect was lower on the R~t~ from cases but had tighter credible intervals. In Wales, evidence for an effect was strongest among R~t~ estimated from cases (with 50% credible intervals ranging from 22-29%). The R~t~ estimates from admissions and deaths were again similar (4-33%). In both countries, R~t~ estimates from deaths provided the weakest support for an effect of the firebreak at the outer limits of credible intervals (all 90% credible intervals for deaths fell just below 1) but the central estimates of the effect sizes matched those from other data sources.
+
+In general, we observed comparable results from either using breakpoints only on known intervention dates, or from allowing weekly change prior to known intervention dates. The more flexible approach produced slightly reduced effect sizes with increased credible intervals.
+
+```{r echo=FALSE, fig.align='center', fig.height=2, fig.width=7, message=FALSE, warning=FALSE}
+ library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
 
 effects %>%
   ggplot() +
@@ -211,4 +223,4 @@ plot_breaks <- suppressWarnings(((admissions_wales | admissions_ni) +
 plot_breaks
 
 ```
-*Figure 2. Top to bottom: Data for hospital admissions, cases, and deaths, in Wales and Northern Ireland. R~t~ modelled using a single breakpoint: 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). R~t~ including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the single breakpoint as above.*
+*Figure 2. Top to bottom: Data for hospital admissions, cases, and deaths, in Wales and Northern Ireland. R~t~ modelled using a breakpoints at the beginning and end of the firebreaks: 24th October in Wales (firebreak); 16th October in Northern Ireland (firebreak). R~t~ including a random walk, with breakpoints each Sunday until the week before the firebreak, plus the firebreak breakpoints as above.*
