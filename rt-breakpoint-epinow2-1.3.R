@@ -91,7 +91,7 @@ run_rt_breakpoint <- function(data,
         target_folder = targets,
         summary_args = list(summary_dir = summary,
                             all_regions = FALSE),
-        logs = paste0(save_loc, "/log/", Sys.time()))
+        logs = save_loc)
       
       return(out)
     }
