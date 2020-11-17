@@ -25,15 +25,27 @@ First we modelled R~t~ as piecewise constant with a single breakpoint at the sta
 We measured effect size as a multiplicative change in R~t~.
 
 ## Results
-
-We saw some evidence of an impact of the firebreak when R~t~ was modelled using a breakpoint. The firebreak appeared to have a strong effect on decreasing R~t~ by ca. 10-30% when estimated from hospital admissions in Northern Ireland and Wales, bringing R~t~ below 1 in both cases. A similar effect was observed in Rt from reported cases in Wales.
-
-```{r, fig.height = 2, fig.width = 7, fig.align='center', message=F, warning=F, echo=FALSE}
- library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
-
+```{r, message=F, warning=F, echo=FALSE}
+ library(dplyr, quietly = TRUE)
 effects <- suppressMessages(readr::read_csv(here::here(Sys.Date(),
                             "breakpoint-effects.csv"))) %>%
   dplyr::mutate_if(is.numeric, ~ 1 - .) 
+
+effects_group <- effects %>%
+  group_by(region, source) %>%
+  summarise(mean_median = round(mean(median)*100,1),
+            max_l50 = round(max(lower_50)*100,1),
+            min_u50 = round(min(upper_50)*100,1))
+```
+
+In Northern Ireland there was clear evidence of a reduction in R~t~ linked with the firebreak across all data streams and methods. Among R~t~ estimated from admissions and deaths, this had a comparable effect size (between 10% to 35%, bringing R~t~ to below 1), while evidence of an effect was slightly weaker in R~t~ from cases. 
+
+In Wales there was less evidence for an effect. There was some support for an effect in R~t~ estimated from cases (-4% to 14%, with mean of central estimates 5%), with weaker support in admissions (-9% to 8%, with mean of central estimates 1.2%). In all estimates the lower 50% credible interval of the effect size fell under 0, and there was no evidence of an effect on deaths.
+
+In general, we observed comparable results from either using breakpoints only on known intervention dates, or from allowing weekly change prior to known intervention dates. The more flexible approach appears to have produced slightly reduced effect sizes with reduced credible intervals.
+
+```{r, fig.height = 2, fig.width = 7, fig.align='center', message=F, warning=F, echo=FALSE}
+ library(dplyr, quietly = TRUE); library(ggplot2, quietly = TRUE)
 
 effects %>%
   ggplot() +
