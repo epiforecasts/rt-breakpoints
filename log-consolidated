@@ -1,0 +1,127 @@
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:data.table’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+here() starts at /home/epinow2/rt-breakpoints
+[1] "Estimates for cases"
+INFO [2020-11-17 16:00:03] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-17 16:00:03] Reporting estimates using data up to: 2020-11-16
+INFO [2020-11-17 16:00:03] Saving estimates to : breakpoint-only/cases/region
+Logging threshold set at INFO for the EpiNow2 logger
+Writing EpiNow2 logs to: breakpoint-only//regional-epinow/2020-11-16.log
+Logging threshold set at INFO for the EpiNow2.epinow logger
+Writing EpiNow2.epinow logs to: breakpoint-only//epinow/2020-11-16.log
+INFO [2020-11-17 16:00:03] Producing estimates for: Wales, Northern Ireland
+INFO [2020-11-17 16:00:03] Regions excluded: none
+INFO [2020-11-17 16:00:03] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-17 16:01:03] Completed estimates for: 9
+INFO [2020-11-17 16:00:57] Completed estimates for: 11
+INFO [2020-11-17 16:01:03] Completed regional estimates
+INFO [2020-11-17 16:01:03] Regions with estimates: 2
+INFO [2020-11-17 16:01:03] Regions with runtime errors: 0
+INFO [2020-11-17 16:01:03] Producing summary
+INFO [2020-11-17 16:01:03] Saving summary to : breakpoint-only/cases/summary
+INFO [2020-11-17 16:01:08] Saving timings information to : breakpoint-only/cases/region
+[1] "Estimates for admissions"
+INFO [2020-11-17 16:01:08] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-17 16:01:08] Reporting estimates using data up to: 2020-11-16
+INFO [2020-11-17 16:01:08] Saving estimates to : breakpoint-only/admissions/region
+INFO [2020-11-17 16:01:08] Producing estimates for: Wales, Northern Ireland
+INFO [2020-11-17 16:01:08] Regions excluded: none
+INFO [2020-11-17 16:01:08] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+Logging threshold set at INFO for the EpiNow2 logger
+Writing EpiNow2 logs to: breakpoint-only//regional-epinow/2020-11-16.log
+Logging threshold set at INFO for the EpiNow2.epinow logger
+Writing EpiNow2.epinow logs to: breakpoint-only//epinow/2020-11-16.log
+INFO [2020-11-17 16:01:54] Completed estimates for: 9
+INFO [2020-11-17 16:01:44] Completed estimates for: 11
+INFO [2020-11-17 16:01:55] Completed regional estimates
+INFO [2020-11-17 16:01:55] Regions with estimates: 2
+INFO [2020-11-17 16:01:55] Regions with runtime errors: 0
+INFO [2020-11-17 16:01:55] Producing summary
+INFO [2020-11-17 16:01:55] Saving summary to : breakpoint-only/admissions/summary
+INFO [2020-11-17 16:01:58] Saving timings information to : breakpoint-only/admissions/region
+[1] "Estimates for deaths"
+INFO [2020-11-17 16:01:58] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-17 16:01:58] Reporting estimates using data up to: 2020-11-16
+INFO [2020-11-17 16:01:58] Saving estimates to : breakpoint-only/deaths/region
+Logging threshold set at INFO for the EpiNow2 logger
+Writing EpiNow2 logs to: breakpoint-only//regional-epinow/2020-11-16.log
+Logging threshold set at INFO for the EpiNow2.epinow logger
+Writing EpiNow2.epinow logs to: breakpoint-only//epinow/2020-11-16.log
+INFO [2020-11-17 16:01:58] Producing estimates for: Wales, Northern Ireland
+INFO [2020-11-17 16:01:58] Regions excluded: none
+INFO [2020-11-17 16:01:58] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-17 16:02:53] Completed estimates for: 9
+INFO [2020-11-17 17:16:23] Completed estimates for: 11
+INFO [2020-11-17 17:16:24] Completed regional estimates
+INFO [2020-11-17 17:16:24] Regions with estimates: 2
+INFO [2020-11-17 17:16:24] Regions with runtime errors: 0
+INFO [2020-11-17 17:16:24] Producing summary
+INFO [2020-11-17 17:16:24] Saving summary to : breakpoint-only/deaths/summary
+INFO [2020-11-17 17:16:27] Saving timings information to : breakpoint-only/deaths/region
+[1] "Estimates for cases"
+INFO [2020-11-17 17:16:27] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-17 17:16:27] Reporting estimates using data up to: 2020-11-16
+INFO [2020-11-17 17:16:27] Saving estimates to : breakpoint-with-rw/cases/region
+Logging threshold set at INFO for the EpiNow2 logger
+Writing EpiNow2 logs to: breakpoint-with-rw//regional-epinow/2020-11-16.log
+Logging threshold set at INFO for the EpiNow2.epinow logger
+Writing EpiNow2.epinow logs to: breakpoint-with-rw//epinow/2020-11-16.log
+INFO [2020-11-17 17:16:27] Producing estimates for: Wales, Northern Ireland
+INFO [2020-11-17 17:16:27] Regions excluded: none
+INFO [2020-11-17 17:16:27] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-17 17:18:29] Completed estimates for: 9
+INFO [2020-11-17 17:18:06] Completed estimates for: 11
+INFO [2020-11-17 17:18:29] Completed regional estimates
+INFO [2020-11-17 17:18:29] Regions with estimates: 2
+INFO [2020-11-17 17:18:29] Regions with runtime errors: 0
+INFO [2020-11-17 17:18:29] Producing summary
+INFO [2020-11-17 17:18:29] Saving summary to : breakpoint-with-rw/cases/summary
+INFO [2020-11-17 17:18:32] Saving timings information to : breakpoint-with-rw/cases/region
+[1] "Estimates for admissions"
+INFO [2020-11-17 17:18:32] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-17 17:18:32] Reporting estimates using data up to: 2020-11-16
+INFO [2020-11-17 17:18:32] Saving estimates to : breakpoint-with-rw/admissions/region
+INFO [2020-11-17 17:18:32] Producing estimates for: Wales, Northern Ireland
+Logging threshold set at INFO for the EpiNow2 logger
+Writing EpiNow2 logs to: breakpoint-with-rw//regional-epinow/2020-11-16.log
+Logging threshold set at INFO for the EpiNow2.epinow logger
+Writing EpiNow2.epinow logs to: breakpoint-with-rw//epinow/2020-11-16.log
+INFO [2020-11-17 17:18:32] Regions excluded: none
+INFO [2020-11-17 17:18:33] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-17 17:19:57] Completed estimates for: 9
+INFO [2020-11-17 17:19:24] Completed estimates for: 11
+INFO [2020-11-17 17:19:58] Completed regional estimates
+INFO [2020-11-17 17:19:58] Regions with estimates: 2
+INFO [2020-11-17 17:19:58] Regions with runtime errors: 0
+INFO [2020-11-17 17:19:58] Producing summary
+INFO [2020-11-17 17:19:58] Saving summary to : breakpoint-with-rw/admissions/summary
+INFO [2020-11-17 17:20:01] Saving timings information to : breakpoint-with-rw/admissions/region
+[1] "Estimates for deaths"
+INFO [2020-11-17 17:20:01] Producing following optional outputs: regions, samples, summary, timing
+INFO [2020-11-17 17:20:01] Reporting estimates using data up to: 2020-11-16
+INFO [2020-11-17 17:20:01] Saving estimates to : breakpoint-with-rw/deaths/region
+INFO [2020-11-17 17:20:01] Producing estimates for: Wales, Northern Ireland
+INFO [2020-11-17 17:20:01] Regions excluded: none
+Logging threshold set at INFO for the EpiNow2 logger
+Writing EpiNow2 logs to: breakpoint-with-rw//regional-epinow/2020-11-16.log
+Logging threshold set at INFO for the EpiNow2.epinow logger
+Writing EpiNow2.epinow logs to: breakpoint-with-rw//epinow/2020-11-16.log
+INFO [2020-11-17 17:20:01] Showing progress using progressr. Modify this behaviour using progressr::handlers.
+INFO [2020-11-17 17:21:37] Completed estimates for: 9
+INFO [2020-11-17 17:21:28] Completed estimates for: 11
+INFO [2020-11-17 17:21:38] Completed regional estimates
+INFO [2020-11-17 17:21:38] Regions with estimates: 2
+INFO [2020-11-17 17:21:38] Regions with runtime errors: 0
+INFO [2020-11-17 17:21:38] Producing summary
+INFO [2020-11-17 17:21:38] Saving summary to : breakpoint-with-rw/deaths/summary
+INFO [2020-11-17 17:21:41] Saving timings information to : breakpoint-with-rw/deaths/region
