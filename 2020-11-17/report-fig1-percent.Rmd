@@ -54,7 +54,7 @@ effects %>%
   theme(legend.position = "bottom",
         strip.background = element_rect(colour = "transparent"))
 ```
-*Figure 1. Effect size (multiplicative change shown as percentage) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales, 16th October for N Ireland), median with 50% (darker) and 90% (lighter) credible intervals.*
+*Figure 1. Effect size (multiplicative change shown as percentage) of breakpoint on R~t~, on the start of the firebreak: 24th October for Wales, 16th October for N Ireland, median with 50% (darker) and 90% (lighter) credible intervals.*
 
 
 ```{r, fig.height = 12, fig.width = 15, message=F, warning=F, echo=FALSE}
