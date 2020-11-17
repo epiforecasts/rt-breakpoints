@@ -1,6 +1,6 @@
 # Run breakpoint estimates
 # Uses Epinow 2 v1.3
-remotes::install_github("epiforecasts/EpiNow2")
+# remotes::install_github("epiforecasts/EpiNow2")
 
 # Packages -----------------------------------------------------------------
 library(EpiNow2)
@@ -10,17 +10,17 @@ library(future)
 
 # Delays -----------------------------------------------------------
 # Update
-# source(here::here("rt-estimate", "delays", "public-linelist-delays.R"))
+# source(here::here("delays", "public-linelist-delays.R"))
 
 # Fixed
-generation_time <- readRDS(here::here("rt-estimate", "delays", "data", "generation_time.rds"))
-incubation_period <- readRDS(here::here("rt-estimate", "delays", "data", "incubation_period.rds"))
+generation_time <- readRDS(here::here("delays", "data", "generation_time.rds"))
+incubation_period <- readRDS(here::here("delays", "data", "incubation_period.rds"))
 
 # Deaths delay
-deaths_delay <- readRDS(here::here("rt-estimate", "delays", "data", "cocin_onset_to_death_delay.rds"))
+deaths_delay <- readRDS(here::here("delays", "data", "cocin_onset_to_death_delay.rds"))
 
 # Cases delay
-cases_delay <- readRDS(here::here("rt-estimate", "delays", "data", "public_onset_to_report_delay.rds"))
+cases_delay <- readRDS(here::here("delays", "data", "public_onset_to_report_delay.rds"))
 
 
 # get public data ----------------------------------------------------------------
@@ -43,8 +43,8 @@ cases_delay <- readRDS(here::here("rt-estimate", "delays", "data", "public_onset
 
 
 # get private data --------------------------------------------------------
-raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
-# raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
+# raw <- readRDS("covid19_uk_forecast_data/data/processed/latest_data.rds")
+raw <- readRDS(path.expand(file.path("C:", "Users", "kaths", "Github", "covid19_uk_forecast_data", "data", "processed", "latest_data.rds")))
 
 raw$value_desc <- NULL
 data <- raw[raw$type == "Data" ,]
@@ -52,6 +52,9 @@ data <- tidyr::pivot_wider(data, values_from = "value", names_from = "value_type
 data$type <- NULL
 data <- data[,c("value_date", "geography", "death_inc_line", "hospital_inc", "reported_cases")]
 colnames(data) <- c("date", "region", "deaths", "admissions", "cases")
+
+
+# Format data -------------------------------------------------------------
 
 data <- as.data.table(data)
 

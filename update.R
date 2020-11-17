@@ -13,5 +13,5 @@ source(here::here("breakpoint-effects.R"))
 source(here::here("format-data.R"))
 
 # Run report
-file.copy(here::here("generic-report.R"),
-          here::here(Sys.Date(), "report.R"))
+# file.copy(here::here("generic-report.R"),
+#           here::here(Sys.Date(), "report.R"))
